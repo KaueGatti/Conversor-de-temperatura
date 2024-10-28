@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+  </head>
+  <body>
+    <main class="Conversor">
+      <!--Aqui vai todo o conteudo do conversor-->
+      <h1>Conversor de Temperatura</h1>
+      <p>Digite o valor em Celsius:</p>
+      <form class="formulario">
+        <section class="cxCelsius">
+          <label for="tempCelsius">°C:</label>
+          <input
+            id="tempCelsius"
+            name="tempCelsius"
+            step="0.1"
+            class="tempCelsius"
+            type="number"
+          />
+        </section>
+        <section class="cxBttsConverter">
+          <button id="bttKelvin" class="bttKelvin" type="submit">Kelvin</button>
+          <button id="bttFahrenheit" class="bttFahrenheit" type="submit">
+            Fahrenheit
+          </button>
+        </section>
+      </form>
+      <section class="cxResultado">
+        <p id="pResultado">Valor em</p>
+      </section>
+      <article>
+        <label id="labelResultado" class="labelResultado" for="resultado"
+          >K
+        </label>
+        <input
+          id="inputResultado"
+          class="inputResultado"
+          type="number"
+          name="resultado"
+          value="0"
+          disabled
+        />
+      </article>
+    </main>
+    <script src="script/script.js"></script>
+    <footer>Kaue Vínicius Gatti</footer>
+  </body>
+</html>
